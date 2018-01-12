@@ -12,16 +12,18 @@ import javafx.scene.shape.Circle;
  *
  * @author Israel
  */
-public class BadLongMethod {
-    
-    public void shapeInformation(){
+public class LongMethod {
+     public void shapeInformation(){
     
         Circle circulo = new Circle(1+Math.random()*10);
         circulo.setFill(Color.CADETBLUE);
-    
-        // se imprime el radio y el color
-        System.out.println("el radio del circulo es: "+circulo.getRadius());
-        System.out.println("el color del circulo es : "+circulo.getFill().toString());
+        print(circulo);
     }
+     
+     public void print(Circle circulo){
+     
+         System.out.println("el radio del circulo es: "+circulo.getRadius());
+        System.out.println("el color del circulo es : "+circulo.getFill().toString());
+     }
     
 }
